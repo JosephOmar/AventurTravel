@@ -1,0 +1,156 @@
+---
+import { Swiper, SwiperSlide } from "swiper/react"
+import { FreeMode, Pagination } from "swiper/modules";
+const CARD = [
+    {
+        image: 'https://www.tours-machupicchu-peru.com/wp-content/uploads/2021/11/Ica.jpg',
+        title: "Huacachina - Ica",
+        price: 'S/200',
+        link: '/FullDay/Huacachina'
+    },{
+        image: 'https://www.peru.travel/contenido/general/imagen/es/532/1.1/mullaks-misminay-turistas.jpg',
+        title: "Mullak's - Cuzco",
+        price: 'S/400',
+        link: '/FullDay/Mullaks'
+    },{
+        image: 'https://www.peru.travel/contenido/uploads/deportes_arequipa_bicicleta_637558238305566014.jpg',
+        title: "Colca - Arequipa",
+        price: 'S/300',
+        link: '/FullDay/Colca'
+    },{
+        image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/paracas-peru.jpg',
+        title: "Paracas - Ica",
+        price: 'S/250',
+        link: '/FullDay/Paracas'
+    },{
+        image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/nazca-peru.jpg',
+        title: "Nazca - Ica",
+        price: 'S/350',
+        link: '/FullDay/Nazca'
+    },{
+        image: 'https://elcomercio.pe/resizer/8mcNgiIeuop_a_3urmGFtdkPuow=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/A6G4GWKOXRBCXF5BDC3VSNRPDY.jpg',
+        title: "Antioquía",
+        price: 'S/450',
+        link: '/FullDay/Antioquia'
+    },{
+        image: 'https://elcomercio.pe/resizer/SbUANyo_ltbOsG9nwrrTxf9kv3w=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4EXYALXF5BGF5HZ6ZKWCAZWH2A.jpg',
+        title: "Cordillera de la Viuda",
+        price: 'S/150',
+        link: '/FullDay/Cordillera-de-la-Viuda'
+    }
+]
+import TopTrips from "./TopTrips.astro"
+import ArrowRightIcon from "../Icons/ArrowRightIcon.astro";
+import ArrowLeftIcon from "../Icons/ArrowLeftIcon.astro";
+---
+
+
+<section class="max-w-[1300px] mx-auto product overflow-hidden" id="FeaturedTours"> 
+    <div class="w-full p-6 flex justify-center">
+        <h2 class=" text-3xl font-semibold relative mb-4">
+            Tours Destacados
+            <span class="block w-[100%] h-1 bg-[#7f3812] pt-2 mt-2"></span>
+        </h2>
+    </div>
+    <div class="product-container">
+        {CARD.map((item) => (
+            <TopTrips {...item}/>
+      ))} 
+      <button class="pre-btn " ><ArrowLeftIcon class="hidden bg-white rounded-full lg:block dark:bg-white"/></button>
+      <button class="nxt-btn "><ArrowRightIcon class="hidden bg-white rounded-full lg:block dark:bg-white"/></button>
+    </div>
+</section>
+
+<style>
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: -5%;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: -5%;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+</style>
