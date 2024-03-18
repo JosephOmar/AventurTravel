@@ -1,5 +1,8 @@
 ---
-
+interface Props{
+  additionals: String[]
+}
+const { additionals } = Astro.props
 ---
 
 <section class="flex justify-start items-start flex-col mt-5 gap-5">
@@ -7,22 +10,14 @@
         Servicios Adicionales
         <span class="block bg-[#7f3812] w-full h-1 pt-2"></span>
     </h2> 
-    <li class="flex items-center">
+    {
+      additionals.map(additional => (
+      <li class="flex items-center">
         <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
         </svg>
-        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Alojamiento</span>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">{additional}</span>
     </li>
-    <li class="flex items-center">
-        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-        </svg>
-        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Alojamiento</span>
-    </li>
-    <li class="flex items-center">
-        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-        </svg>
-        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Alojamiento</span>
-    </li>
+      ))
+    }
 </section>

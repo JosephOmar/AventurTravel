@@ -8,46 +8,40 @@ import Reason6 from '../Icons/Reason/Reason6.astro'
 export const CARD = [
   {
     image: 'https://www.tours-machupicchu-peru.com/wp-content/uploads/2021/11/Ica.jpg',
-    title: 'Huacachina - Ica',
+    title: 'Paracas',
     price: 'S/200',
-    link: '/FullDay/Huacachina',
+    link: '/Tours-Lima/Weekend/Paracas',
     description: 'Descubre la encantadora oasis de Huacachina en Ica, rodeada de dunas de arena espectaculares, donde podrás disfrutar de actividades como paseos en buggies y sandboarding, así como de la belleza natural y la tranquilidad del entorno desértico.'
   }, {
     image: 'https://www.peru.travel/contenido/general/imagen/es/532/1.1/mullaks-misminay-turistas.jpg',
-    title: "Mullak's - Cuzco",
+    title: 'Lunahuana',
     price: 'S/400',
-    link: '/FullDay/Mullaks',
+    link: '/Tours-Lima/Weekend/Lunahuana',
     description: "Embárcate en una experiencia única en Mullak's, ubicado en las impresionantes montañas de Cuzco. Sumérgete en la cultura local mientras exploras los paisajes montañosos, interactúas con la comunidad indígena y disfrutas de deliciosa comida tradicional."
   }, {
     image: 'https://www.peru.travel/contenido/uploads/deportes_arequipa_bicicleta_637558238305566014.jpg',
-    title: 'Colca - Arequipa',
+    title: 'Chincha',
     price: 'S/300',
-    link: '/FullDay/Colca',
+    link: '/Tours-Lima/Weekend/chincha',
     description: 'Adéntrate en el cañón más profundo del mundo, el Colca en Arequipa, donde serás testigo de majestuosos cóndores sobrevolando los imponentes picos de las montañas. Disfruta de aguas termales relajantes y de la rica cultura andina que habita esta región.'
   }, {
     image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/paracas-peru.jpg',
-    title: 'Paracas - Ica',
+    title: 'Ica',
     price: 'S/250',
-    link: '/FullDay/Paracas',
+    link: '/Tours-Lima/Weekend/ica',
     description: 'Explora la belleza natural y la vida marina abundante en Paracas, un paraíso costero en Ica. Navega por las aguas turquesas de la Reserva Nacional de Paracas, admira los impresionantes acantilados y conoce la fascinante historia geológica de la región.'
   }, {
     image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/nazca-peru.jpg',
-    title: 'Nazca - Ica',
+    title: 'Cañete',
     price: 'S/350',
-    link: '/FullDay/Nazca',
+    link: '/Tours-Lima/Weekend/canete',
     description: 'Deslúmbrate con las misteriosas líneas de Nazca en Ica, un sitio arqueológico declarado Patrimonio de la Humanidad por la UNESCO. Sobrevuela estas enigmáticas figuras geométricas y zoomorfas que se extienden por el desierto, mientras te sumerges en la historia y el misterio de esta antigua civilización.'
   }, {
     image: 'https://elcomercio.pe/resizer/8mcNgiIeuop_a_3urmGFtdkPuow=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/A6G4GWKOXRBCXF5BDC3VSNRPDY.jpg',
-    title: 'Antioquía',
+    title: 'Huacho',
     price: 'S/450',
-    link: '/FullDay/Antioquia',
+    link: '/Tours-Lima/Weekend/huacho',
     description: 'Sumérgete en la historia y la cultura de Antioquía, un encantador pueblo enclavado en los Andes peruanos. Recorre sus calles empedradas, visita sus iglesias coloniales y disfruta de la hospitalidad de sus habitantes mientras te maravillas con las impresionantes vistas panorámicas de las montañas circundantes.'
-  }, {
-    image: 'https://elcomercio.pe/resizer/SbUANyo_ltbOsG9nwrrTxf9kv3w=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4EXYALXF5BGF5HZ6ZKWCAZWH2A.jpg',
-    title: 'Cordillera de la Viuda',
-    price: 'S/150',
-    link: '/FullDay/Cordillera-de-la-Viuda',
-    description: 'Explora la impresionante Cordillera de la Viuda, un paraíso natural situado en la región central de Perú. Embárcate en emocionantes caminatas por senderos escénicos, admira cascadas cristalinas y sumérgete en la serenidad de este paisaje montañoso espectacular.'
   }
 ]
 
@@ -65,16 +59,16 @@ export const TOURS_NACIONAL = [
     link: '/Tours-Nacional/arequipa'
   },
   {
-    name: 'Chanchamayo',
-    link: '/Tours-Nacional/chanchamayo'
+    name: 'Cajamarca',
+    link: '/Tours-Nacional/cajamarca'
   },
   {
     name: 'Cusco',
     link: '/Tours-Nacional/cusco'
   },
   {
-    name: 'Ica',
-    link: '/Tours-Nacional/ica'
+    name: 'Huancavelica',
+    link: '/Tours-Nacional/huancavelica'
   },
   {
     name: 'Iquitos',
@@ -91,10 +85,6 @@ export const TOURS_NACIONAL = [
   {
     name: 'Puno',
     link: '/Tours-Nacional/puno'
-  },
-  {
-    name: 'Tarapoto',
-    link: '/Tours-Nacional/tarapoto'
   }
 ]
 export const TOURS_INTERNATIONAL = [
