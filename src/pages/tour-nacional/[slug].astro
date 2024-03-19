@@ -15,26 +15,26 @@ import FormTravel from "../../components/Details/FormTravel.astro";
 import CommentsDetails from "../../components/Details/CommentsDetails.astro";
 import TravelTime from "../../components/Details/TravelTime.astro";
 
-const response = await fetch('https://aventurtravel-api.2.us-1.fl0.io/destinations?tourOption=Tours-Nacional');
+const response = await fetch('https://aventurtravel-dev-trkz.2.us-1.fl0.io/destinations?sectionPrimary=Tour+Nacional');
 const data = await response.json();
 const { slug } = Astro.params; 
 const tour: Tour = data.find((tour: Tour) => tour.slug === slug);
 if (!tour) return Astro.redirect("/404");
 ---
-<Layout title={tour.title} description={tour.description}>
+<Layout title={tour.title} description={tour.descriptionTitle}>
   <SliderNav image1={tour.imgSlider[0]} image2={tour.imgSlider[1]} image3={tour.imgSlider[2]} image4={tour.imgSlider[3]} h="md:h-[50vh]"/>
   <TitleDetails name={tour.title}></TitleDetails>
   <ContainerDetails>
-    <Description description={tour.description} slot="section1"/>
+    <Description description={tour.descriptionGeneral} slot="section1"/>
     <TravelTime timetravel={tour.timeTravel}/>
     <Itinerary days={tour.itinerary} slot="section1"/>
-    <DetailsTravel details={tour.additional} slot="section1"/>
+    <DetailsTravel details={tour.additionalServices} slot="section1"/>
     <Considerations considerations={tour.considerations} slot="section1"/>
-    <Price exchange="PEN" price={tour.price} slot="section2"/>
-    <CarouselDetails images={tour.imgCarousel} slot="section2"/>
-    <AdditionalServices additionals={tour.additional} slot="section1"/>
+    <Price price={tour.price} slot="section2"/>
+    <CarouselDetails images={tour.imgSlider} slot="section2"/>
+    <AdditionalServices additionals={tour.additionalServices} slot="section1"/>
   </ContainerDetails>
-  <FormTravel place=`${tour.tourOption} ${tour.title}`/>
-  <CommentsDetails comments={tour.comments}/>
+  <FormTravel place=`${tour.sectionPrimary} ${tour.title}`/>
+  <CommentsDetails comments={tour.comment}/>
 </Layout>
     

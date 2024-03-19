@@ -8,150 +8,150 @@ import Reason6 from '../Icons/Reason/Reason6.astro'
 export const CARD = [
   {
     image: 'https://www.tours-machupicchu-peru.com/wp-content/uploads/2021/11/Ica.jpg',
-    title: 'Paracas',
+    title: 'Paracas y Huacachina',
     price: 'S/200',
-    link: '/Tours-Lima/Weekend/Paracas',
-    description: 'Descubre la encantadora oasis de Huacachina en Ica, rodeada de dunas de arena espectaculares, donde podrás disfrutar de actividades como paseos en buggies y sandboarding, así como de la belleza natural y la tranquilidad del entorno desértico.'
+    link: '/tour-lima/weekend/paracas-huacachina',
+    description: 'Paracas, hogar de impresionantes acantilados y una biodiversidad marina única en su reserva nacional. Huacachina, un oasis rodeado de dunas, ofrece emocionantes experiencias de sandboarding y paseos en buggy, además de ser un lugar perfecto para relajarse al atardecer.'
   }, {
     image: 'https://www.peru.travel/contenido/general/imagen/es/532/1.1/mullaks-misminay-turistas.jpg',
-    title: 'Lunahuana',
+    title: 'Huaral y Chancay',
     price: 'S/400',
-    link: '/Tours-Lima/Weekend/Lunahuana',
-    description: "Embárcate en una experiencia única en Mullak's, ubicado en las impresionantes montañas de Cuzco. Sumérgete en la cultura local mientras exploras los paisajes montañosos, interactúas con la comunidad indígena y disfrutas de deliciosa comida tradicional."
+    link: '/tour-lima/weekend/huaral-chancay',
+    description: 'Huaral, tierra de valles verdes y cascadas escondidas, donde la historia se mezcla con la naturaleza. Chancay, famoso por sus bodegas centenarias que ofrecen exquisitos vinos y una cocina tradicional que deleita los sentidos de los visitantes.'
   }, {
     image: 'https://www.peru.travel/contenido/uploads/deportes_arequipa_bicicleta_637558238305566014.jpg',
-    title: 'Chincha',
+    title: 'Cieneguilla y Pachacamac',
     price: 'S/300',
-    link: '/Tours-Lima/Weekend/chincha',
-    description: 'Adéntrate en el cañón más profundo del mundo, el Colca en Arequipa, donde serás testigo de majestuosos cóndores sobrevolando los imponentes picos de las montañas. Disfruta de aguas termales relajantes y de la rica cultura andina que habita esta región.'
+    link: '/tour-lima/weekend/cieneguilla-pachacamac',
+    description: 'Cieneguilla, refugio natural cerca de Lima, con su clima cálido y actividades al aire libre como senderismo y ciclismo de montaña. Pachacamac, antigua ciudad sagrada de los Incas, donde se puede explorar su impresionante complejo arqueológico.'
   }, {
     image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/paracas-peru.jpg',
-    title: 'Ica',
+    title: 'Valle de las Lomas',
     price: 'S/250',
-    link: '/Tours-Lima/Weekend/ica',
-    description: 'Explora la belleza natural y la vida marina abundante en Paracas, un paraíso costero en Ica. Navega por las aguas turquesas de la Reserva Nacional de Paracas, admira los impresionantes acantilados y conoce la fascinante historia geológica de la región.'
+    link: '/tour-lima/weekend/valle-lomas-santa-eulalia',
+    description: 'El Valle de las Lomas, un tesoro escondido en la provincia de Lima, ofrece un paisaje impresionante y una biodiversidad única. Ideal para los amantes del ecoturismo y la observación de aves, este valle cautiva con sus colores y su tranquilidad.'
   }, {
     image: 'https://www.paquetesdeviajesperu.com/wp-content/uploads/2022/07/nazca-peru.jpg',
-    title: 'Cañete',
+    title: 'Lunahuaná y Antioquía',
     price: 'S/350',
-    link: '/Tours-Lima/Weekend/canete',
-    description: 'Deslúmbrate con las misteriosas líneas de Nazca en Ica, un sitio arqueológico declarado Patrimonio de la Humanidad por la UNESCO. Sobrevuela estas enigmáticas figuras geométricas y zoomorfas que se extienden por el desierto, mientras te sumerges en la historia y el misterio de esta antigua civilización.'
+    link: '/tour-lima/weekend/lunahuana-antioquia',
+    description: 'Lunahuaná, destino de aventura y relax en medio de valles y ríos, perfecto para practicar deportes como rafting y canopy, además de disfrutar de la gastronomía local. Antioquía, encantador pueblo colonial donde el tiempo parece detenerse.'
   }, {
     image: 'https://elcomercio.pe/resizer/8mcNgiIeuop_a_3urmGFtdkPuow=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/A6G4GWKOXRBCXF5BDC3VSNRPDY.jpg',
-    title: 'Huacho',
+    title: 'Canta y Obrajillo',
     price: 'S/450',
-    link: '/Tours-Lima/Weekend/huacho',
-    description: 'Sumérgete en la historia y la cultura de Antioquía, un encantador pueblo enclavado en los Andes peruanos. Recorre sus calles empedradas, visita sus iglesias coloniales y disfruta de la hospitalidad de sus habitantes mientras te maravillas con las impresionantes vistas panorámicas de las montañas circundantes.'
+    link: '/tour-lima/weekend/canta-obrajillo',
+    description: 'Canta, enclavado en los Andes centrales, ofrece paisajes de ensueño y una atmósfera tranquila ideal para desconectar. Obrajillo, pintoresco pueblo rodeado de montañas, donde se puede disfrutar de deliciosos platos típicos y descubrir la artesanía local.'
   }
 ]
 
 export const TOURS_NACIONAL = [
   {
     name: 'Amazonas',
-    link: '/Tours-Nacional/amazonas'
+    link: '/tour-nacional/amazonas'
   },
   {
     name: 'Ancash',
-    link: '/Tours-Nacional/ancash'
+    link: '/tour-nacional/ancash'
   },
   {
     name: 'Arequipa',
-    link: '/Tours-Nacional/arequipa'
+    link: '/tour-nacional/arequipa'
   },
   {
     name: 'Cajamarca',
-    link: '/Tours-Nacional/cajamarca'
+    link: '/tour-nacional/cajamarca'
   },
   {
     name: 'Cusco',
-    link: '/Tours-Nacional/cusco'
+    link: '/tour-nacional/cusco'
   },
   {
     name: 'Huancavelica',
-    link: '/Tours-Nacional/huancavelica'
+    link: '/tour-nacional/huancavelica'
   },
   {
     name: 'Iquitos',
-    link: '/Tours-Nacional/iquitos'
+    link: '/tour-nacional/iquitos'
   },
   {
     name: 'Lambayeque',
-    link: '/Tours-Nacional/lambayeque'
+    link: '/tour-nacional/lambayeque'
   },
   {
     name: 'Piura',
-    link: '/Tours-Nacional/piura'
+    link: '/tour-nacional/piura'
   },
   {
     name: 'Puno',
-    link: '/Tours-Nacional/puno'
+    link: '/tour-nacional/puno'
   }
 ]
 export const TOURS_INTERNATIONAL = [
   {
     name: 'Sudamérica',
-    link: '/Tours-Internacional/Sudamerica'
+    link: '/tour-internacional/sudamerica'
   },
   {
     name: 'Caribe',
-    link: '/Tours-Internacional/Caribe'
+    link: '/tour-internacional/caribe'
   },
   {
     name: 'Norteamérica',
-    link: '/Tours-Internacional/Norteamerica'
+    link: '/tour-internacional/norteamerica'
   },
   {
     name: 'Europa',
-    link: '/Tours-Internacional/europa'
+    link: '/tour-internacional/europa'
   },
   {
     name: 'Asia',
-    link: '/Tours-Internacional/asia'
+    link: '/tour-internacional/asia'
   },
   {
     name: 'África',
-    link: '/Tours-Internacional/africa'
+    link: '/tour-internacional/africa'
   }
 ]
 export const TOURS_LIMA = [
   {
     name: 'CityTour',
-    link: '/Tours-Lima/city-tour'
+    link: '/tour-lima/city-tour-lima'
   },
   {
     name: 'Tours Temáticos',
-    link: '/Tours-Lima/tours-tematicos'
+    link: '/tour-lima/tematico'
   },
   {
     name: 'Museos Religiosos',
-    link: '/Tours-Lima/museos-religiosos'
+    link: '/tour-lima/museos-religiosos-lima'
   },
   {
     name: 'Museos Arqueológicos',
-    link: '/Tours-Lima/museos-arqueologicos'
+    link: '/tour-lima/museos-arqueologicos-lima'
   },
   {
     name: 'Full Days',
-    link: '/Tours-Lima/Full-Days'
+    link: '/tour-lima/full-day'
   },
   {
     name: 'Weekend',
-    link: '/Tours-Lima/Weekend'
+    link: '/tour-lima/weekend'
   }
 ]
 
 export const TOURS_ESCOLAR = [
   {
     name: 'Visita de Estudios',
-    link: '/Tours-Escolares/Visita-De-Estudios'
+    link: '/tour-escolar/visita-de-estudios'
   },
   {
     name: 'Viaje de Estudios',
-    link: '/Tours-Escolares/Viaje-De-Estudios'
+    link: '/tour-escolar/viaje-de-estudios'
   },
   {
     name: 'Viaje de Promoción',
-    link: '/Tours-Escolares/Viaje-De-Promocion'
+    link: '/tour-escolar/viaje-de-promocion'
   }
 ]
 
@@ -162,7 +162,7 @@ export const FATES = [
     img: '/img/Fates/Machu-Picchu.webp',
     option: 'md:w-[450px] w-[400px]',
     option2: '',
-    link: '/Tours-Nacional'
+    link: '/tour-nacional'
   },
   {
     name: 'Internacional',
@@ -170,7 +170,7 @@ export const FATES = [
     img: '/img/Fates/Caribe.webp',
     option: 'md:w-[450px] w-[400px]',
     option2: '',
-    link: '/Tours-Internacional'
+    link: '/tour-internacional'
   },
   {
     name: 'Lima',
@@ -178,7 +178,7 @@ export const FATES = [
     img: '/img/Fates/Lima.webp',
     option: 'md:w-[450px] w-[400px]',
     option2: '',
-    link: '/Tours-Lima'
+    link: '/tour-lima'
   },
   {
     name: 'Escolares',
@@ -186,7 +186,7 @@ export const FATES = [
     img: '/img/Fates/Promocion.webp',
     option: 'md:w-[450px] w-[400px]',
     option2: '',
-    link: '/Tours-Escolares'
+    link: '/tour-escolar'
   },
   {
     name: 'Viajes Especiales',
@@ -194,7 +194,7 @@ export const FATES = [
     img: '/img/Fates/Especiales.webp',
     option: 'md:w-[920px] w-[400px]',
     option2: 'md:col-span-2 col-span-1',
-    link: '/Tours-Especiales'
+    link: '/tour-especial'
   }
 ]
 

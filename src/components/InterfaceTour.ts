@@ -1,20 +1,28 @@
 export interface Tour {
-  id: string;
-  tourOption: string;
-  slug: string;
+  destination_id: string;
   title: string;
-  name: string;
+  descriptionTitle: string;
+  slug: string;
   imgSlider: string[];
-  description: string;
+  descriptionGeneral: string;
   timeTravel: string;
   itinerary: string[];
+  travelDetails: string[];
   considerations: string[];
-  additional: string[];
-  price: number;
-  imgCarousel: string[];
-  comments: {
-    img: string;
+  additionalServices: string[];
+  imgSliderSecondary: string[];
+  sectionPrimary: string;
+  sectionSecondary: string;
+  price: {
+    currency: string;
+    amount: number;
+    includedServices: string[];
+    notIncludedServices: string[];
+  }[];
+  comment: {
     name: string;
-    description: string;
+    imgProfile: string;
+    content: string;
+    date: string;
   }[];
 }

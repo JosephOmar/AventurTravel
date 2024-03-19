@@ -1,18 +1,22 @@
 ---
 import WhatsAppIcon from '../Icons/Social/WhatsAppIcon.astro'
-
-interface Props{
-    exchange: string
-    price: number
+interface Price {
+  currency: string,
+  amount: number,
+  includedServices: string[],
+  notIncludedServices: string[]
 }
-const {exchange,price } = Astro.props
+interface Props{
+  price: Price[]
+}
+const { price } = Astro.props
 --- 
 <section class="flex justify-center mt-10 relative z-[10]">
     <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Precios desde</h5>
         <div class="flex items-baseline text-gray-900 dark:text-white">
-        <span class="text-3xl font-semibold">{exchange}</span>
-        <span class="text-5xl font-bold tracking-tight">{price}</span>
+        <span class="text-3xl font-semibold">{price[0].currency}</span>
+        <span class="text-5xl font-bold tracking-tight">{price[0].amount}</span>
         <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/aventurero</span>
         </div>
         <ul role="list" class="space-y-5 my-7">
