@@ -8,9 +8,6 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.3.4
     version: 0.3.4(typescript@5.4.2)
-  '@astrojs/netlify':
-    specifier: ^5.1.3
-    version: 5.2.0(astro@4.0.8)
   '@astrojs/react':
     specifier: ^3.0.9
     version: 3.0.9(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)(vite@5.0.10)
