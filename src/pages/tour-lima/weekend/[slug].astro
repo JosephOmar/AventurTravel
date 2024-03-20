@@ -15,23 +15,36 @@ import FormTravel from "@components/Details/FormTravel.astro";
 import CommentsDetails from "@components/Details/CommentsDetails.astro";
 import TravelTime from "@components/Details/TravelTime.astro";
 
-const response = await fetch('https://aventurtravel-dev-trkz.2.us-1.fl0.io/destinations?sectionSecondary=Weekend');
-const data = await response.json();
-const { slug } = Astro.params; 
-const tour: Tour = data.find((tour: Tour) => tour.slug === slug);
-if (!tour) return Astro.redirect("/404");
+export async function getStaticPaths() {
+
+const data = await fetch('https://aventurtravel-dev-trkz.2.us-1.fl0.io/destinations?sectionSecondary=Weekend').then(response => response.json());
+
+  if (data && Array.isArray(data)) {
+
+    return data.map((tour: Tour) => {
+      return {
+        params: { slug: tour.slug },
+        props: { tour }
+      };
+    });
+  }  
+}
+
+const { slug } = Astro.params;
+const { tour } = Astro.props;
+export const prerender = true;
 ---
 <Layout title={tour.title} description={tour.descriptionTitle}>
-  <SliderNav image1={tour.imgSlider[0]} image2={tour.imgSlider[1]} image3={tour.imgSlider[2]} image4={tour.imgSlider[3]} h="md:h-[50vh]"/>
+  <SliderNav image1="/img/National/NationalSlider1.webp" image2="/img/National/NationalSlider2.webp" image3="/img/National/NationalSlider3.webp" image4="/img/National/NationalSlider4.webp" h="md:h-[50vh]"/>
   <TitleDetails name={tour.title}></TitleDetails>
   <ContainerDetails>
     <Description description={tour.descriptionGeneral} slot="section1"/>
-    <TravelTime timetravel={tour.timeTravel}/>
+    <TravelTime timetravel={tour.timeTravel} slot="section1"/>
     <Itinerary days={tour.itinerary} slot="section1"/>
     <DetailsTravel details={tour.additionalServices} slot="section1"/>
     <Considerations considerations={tour.considerations} slot="section1"/>
     <Price price={tour.price} slot="section2"/>
-    <CarouselDetails images={tour.imgSlider} slot="section2"/>
+    <CarouselDetails image1="/img/National/NationalSlider1.webp" image2="/img/National/NationalSlider2.webp" image3="/img/National/NationalSlider3.webp" image4="/img/National/NationalSlider4.webp" slot="section2"/>
     <AdditionalServices additionals={tour.additionalServices} slot="section1"/>
   </ContainerDetails>
   <FormTravel place=`${tour.sectionPrimary} ${tour.title}`/>
